@@ -1,27 +1,30 @@
 package com.bayloteam.Baylo.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Data @NoArgsConstructor @AllArgsConstructor @Builder
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class Trader {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    int id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 
-    String firstName;
+	private String firstName;
 
-    String lastName;
+	private String lastName;
 
-    String email;
+	private String email;
 
 }

@@ -27,9 +27,9 @@ public class TradeRequestController {
         return tradeRequestService.save(tradeRequest);
     }
 
-    @PutMapping(path = "/trade", produces = MediaType.APPLICATION_JSON_VALUE)
-    public TradeRequest update(@RequestBody TradeRequest tradeRequest) {
-        return tradeRequestService.save(tradeRequest);
+    @PutMapping(path = "/trade/{tradeRequestId}/accept", produces = MediaType.APPLICATION_JSON_VALUE)
+    public TradeRequest accept(@PathVariable int tradeRequestId) {
+        return tradeRequestService.accept(tradeRequestId);
     }
 
 }

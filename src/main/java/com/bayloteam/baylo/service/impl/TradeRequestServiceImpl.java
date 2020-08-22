@@ -19,6 +19,13 @@ public class TradeRequestServiceImpl implements TradeRequestService {
     }
 
     @Override
+    public TradeRequest accept(int id) {
+        TradeRequest tradeRequest = get(id);
+        tradeRequest.setStatus(2);
+        return save(tradeRequest);
+    }
+
+    @Override
     public TradeRequest save(TradeRequest tradeRequest) {
         return tradeRequestRepository.save(tradeRequest);
     }

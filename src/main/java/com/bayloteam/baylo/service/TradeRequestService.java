@@ -6,6 +6,8 @@ public interface TradeRequestService {
 
     TradeRequest get(int id);
 
+    TradeRequest accept(int id);
+
     TradeRequest save(TradeRequest newTradeRequest);
 
 }

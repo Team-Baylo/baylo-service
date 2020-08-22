@@ -4,6 +4,7 @@ import com.bayloteam.baylo.model.TradeRequest;
 import com.bayloteam.baylo.service.TradeRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -16,7 +17,7 @@ public class TradeRequestController {
     @Autowired
     private TradeRequestService tradeRequestService;
 
-    @PostMapping(path = "/trade/{tradeRequestId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/trade/{tradeRequestId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public TradeRequest get(@PathVariable int tradeRequestId) {
         return tradeRequestService.get(tradeRequestId);
     }

@@ -1,10 +1,11 @@
-package com.bayloteam.Baylo.service.impl;
+package com.bayloteam.baylo.service.impl;
 
-import com.bayloteam.Baylo.model.Category;
-import com.bayloteam.Baylo.repository.CategoryRepository;
-import com.bayloteam.Baylo.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.bayloteam.baylo.model.Category;
+import com.bayloteam.baylo.repository.CategoryRepository;
+import com.bayloteam.baylo.service.CategoryService;
 
 import java.util.List;
 

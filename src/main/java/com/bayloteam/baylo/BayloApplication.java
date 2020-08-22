@@ -1,4 +1,4 @@
-package com.bayloteam.Baylo;
+package com.bayloteam.baylo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

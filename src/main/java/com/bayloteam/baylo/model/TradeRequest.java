@@ -23,7 +23,7 @@ public class TradeRequest {
 
 	@OneToOne
 	@JoinColumn(name = "want_item_id", referencedColumnName = "id")
-	private Item wantItemId;
+	private Item wantItem;
 
 	private int status;
 

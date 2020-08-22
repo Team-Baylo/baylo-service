@@ -58,7 +58,7 @@ DROP TABLE IF EXISTS item_image;
 CREATE TABLE item_image (
     id INT AUTO_INCREMENT PRIMARY KEY,
     item_id INT,
-    status INT NOT NULL,
+    img TEXT NOT NULL,
     FOREIGN KEY (item_id) REFERENCES item(id)
 );
 

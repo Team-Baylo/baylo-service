@@ -18,7 +18,7 @@ public class ItemImage {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	private int status;
+	private String img;
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "item_id")

@@ -28,6 +28,6 @@ public class ItemServiceImpl implements ItemService {
 
 	@Override
 	public List<Item> findAllByTitle(String title) {
-		return itemRepository.findAllByTitle(title);
+		return itemRepository.findAllByTitleContainingIgnoreCase(title);
 	}
 }

@@ -13,5 +13,5 @@ public interface ItemRepository extends JpaRepository<Item, Integer> {
 
 	List<Item> findByOwner(Trader owner);
 
-	List<Item> findAllByTitle(String title);
+	List<Item> findAllByTitleContainingIgnoreCase(String title);
 }

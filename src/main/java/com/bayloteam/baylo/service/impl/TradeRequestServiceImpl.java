@@ -1,10 +1,13 @@
 package com.bayloteam.baylo.service.impl;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.bayloteam.baylo.model.TradeRequest;
 import com.bayloteam.baylo.repository.TradeRequestRepository;
 import com.bayloteam.baylo.service.TradeRequestService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 @Service
 public class TradeRequestServiceImpl implements TradeRequestService {
@@ -29,5 +32,10 @@ public class TradeRequestServiceImpl implements TradeRequestService {
     public TradeRequest save(TradeRequest tradeRequest) {
         return tradeRequestRepository.save(tradeRequest);
     }
+
+	@Override
+	public List<TradeRequest> findByWantItemOwner(int wantItemOwnerId) {
+		return tradeRequestRepository.findAllByWantItem_Owner_Id(wantItemOwnerId);
+	}
 
 }

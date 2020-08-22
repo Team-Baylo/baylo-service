@@ -23,6 +23,11 @@ public class ItemController {
 	public List<Item> findAllByTitle(@RequestParam String title) {
 		return itemService.findAllByTitle(title);
 	}
+	
+	@GetMapping(path = "/items", produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Item> findAll() {
+		return itemService.findAll();
+	}
 
 	@PostMapping(path = "/item", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Item create(@RequestBody Item newItem) {

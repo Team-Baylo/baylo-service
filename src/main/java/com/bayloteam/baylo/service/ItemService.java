@@ -12,5 +12,7 @@ public interface ItemService {
 	Item create(Item newItem);
 
 	List<Item> findAllByTitle(String title);
+	
+	List<Item> findAll();
 
 }

@@ -45,6 +45,13 @@ CREATE TABLE item (
     FOREIGN KEY (category_id) REFERENCES category(id)
 );
 
+INSERT INTO item (owner_id, category_id, status, title, description) VALUES
+    (1, 1, 1, 'Round', 'Round Table'),
+    (2, 1, 1, 'Square', 'Square Table'),
+    (3, 2, 1, 'Computer', 'Computer Chair'),
+    (4, 4, 1, 'Coffee', 'Coffee Mug'),
+    (5, 5, 1, 'Bread', 'Bread Knife');
+
 ------- Item Image Table -------
 DROP TABLE IF EXISTS item_image;
 

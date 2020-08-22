@@ -1,4 +1,4 @@
-package com.bayloteam.Baylo.model;
+package com.bayloteam.baylo.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.bayloteam.Baylo.model;
+package com.bayloteam.baylo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,8 +1,8 @@
-package com.bayloteam.Baylo.service;
-
-import com.bayloteam.Baylo.model.Category;
+package com.bayloteam.baylo.service;
 
 import java.util.List;
+
+import com.bayloteam.baylo.model.Category;
 
 public interface CategoryService {
 

@@ -1,8 +1,9 @@
-package com.bayloteam.Baylo.repository;
+package com.bayloteam.baylo.repository;
 
-import com.bayloteam.Baylo.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.bayloteam.baylo.model.Category;
 
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Integer> { }

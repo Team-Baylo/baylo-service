@@ -26,8 +26,8 @@ public class TradeRequestController {
 	}
 
 	@GetMapping(path = "/trades/want-item/{ownerId}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<TradeRequest> findByWantItemOwner(@PathVariable int wantItemOwnerId) {
-		return tradeRequestService.findByWantItemOwner(wantItemOwnerId);
+	public List<TradeRequest> findByWantItemOwner(@PathVariable int ownerId) {
+		return tradeRequestService.findByWantItemOwner(ownerId);
 	}
 
 	@PostMapping(path = "/trade", produces = MediaType.APPLICATION_JSON_VALUE)
